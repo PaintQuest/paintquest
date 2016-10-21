@@ -3,10 +3,10 @@
 <iframe src="https://docs.google.com/presentation/d/1DAzAl6hBoVgYhI9QsRxjKcFxVN4sxI7pWDr_bfjmU-s/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ##Why?
--To have fun
--To learn
--To socialize and collaborate
--To succeed
+* To have fun
+* To learn
+* To socialize and collaborate
+* To succeed
 
 ##How?
 By having fun, sharing our knowledge and laugh toghether we are going to solve complex problems and extend our common wisdom. Passion, knowledge and consistency will make us succeed.
