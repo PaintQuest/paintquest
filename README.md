@@ -1,6 +1,7 @@
 # PaintQuest
 
-<iframe src="https://docs.google.com/presentation/d/1DAzAl6hBoVgYhI9QsRxjKcFxVN4sxI7pWDr_bfjmU-s/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+Some slides:
+https://docs.google.com/presentation/d/1DAzAl6hBoVgYhI9QsRxjKcFxVN4sxI7pWDr_bfjmU-s/pub?start=false&loop=false&delayms=10000
 
 ##Why?
 * To have fun
@@ -49,7 +50,7 @@ https://open.spotify.com/user/snuggles88/playlist/2ud2VzegSwJEHBFYXlh6u7 <br />
 Since this is an open source project and we are sharing everything we can as well share our taste in music as well. Feel free to add your songs! :)
 
 ##Frameworks
-My suggestion of frameworks for this project is the following:
+Suggestions of frameworks for this project are:
 
 https://www.rethinkdb.com/ <br />
 The open-source database for the realtime web
