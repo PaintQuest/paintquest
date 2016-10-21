@@ -51,15 +51,15 @@ Since this is an open source project and we are sharing everything we can as wel
 ##Frameworks
 My suggestion of frameworks for this project is the following:
 
-https://www.rethinkdb.com/
+https://www.rethinkdb.com/ <br />
 The open-source database for the realtime web
 
-https://deepstream.io/ 
-the open realtime server
+https://deepstream.io/ <br />
+the open realtime server <br />
 a fast, secure and scalable websocket & tcp server for mobile, web & iot
 
-http://vuejs.org/
+http://vuejs.org/ <br />
 The Progressive JavaScript Framework
 
-http://www.pixijs.com/
+http://www.pixijs.com/ <br />
 Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.
