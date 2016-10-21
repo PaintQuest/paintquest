@@ -1,6 +1,6 @@
 # PaintQuest
 
-Some slides:
+Some slides: <br />
 https://docs.google.com/presentation/d/1DAzAl6hBoVgYhI9QsRxjKcFxVN4sxI7pWDr_bfjmU-s/pub?start=false&loop=false&delayms=10000
 
 ##Why?
