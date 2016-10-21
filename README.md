@@ -1,7 +1,8 @@
 # PaintQuest
 
-What?
+<html>
 <iframe src="https://docs.google.com/presentation/d/1DAzAl6hBoVgYhI9QsRxjKcFxVN4sxI7pWDr_bfjmU-s/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" />
+</html>
 
 ##Why?
 -To have fun
