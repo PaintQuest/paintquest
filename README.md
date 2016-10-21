@@ -40,7 +40,7 @@ This should bring you a chromium browsers with two tabs with a canvas in each.
 
 Visual studio code is installed if you want to start laborate. For get started guides and docs you find links to the different frameworks bellow. Most basic stuff is preinstalled.
 
-###Slack
+###Slack<br />
 https://paintquest.slack.com
 This is where we hang out in sickness and health. Remember that no idea is to small and no problem to big. Come and be a part of the great team! 
 
