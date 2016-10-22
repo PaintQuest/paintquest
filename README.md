@@ -23,7 +23,8 @@ _"Art is about expressions, whether it´s a painting, a poem or a piece of code.
 You will find a list of all the frameworks further down on this page. If you want to setup your own environment all those links contain good getting started guides to help you. To make it easy to get started we have made a preinstalled VMware image, just download it and you have everything you need to get started.
 
 ###Vmware image<br />
-https://github.com/david-nossebro/paintquest/raw/master/xubuntu.zip.torrent <br />
+https://github.com/david-nossebro/paintquest/raw/master/docs/env/paintquestenv7z.torrent (3,2gb)<br />
+https://github.com/david-nossebro/paintquest/raw/master/docs/env/paintquestenv.torrent (4,2gb)<br />
 Password: paint <br /><br />
 
 Inside the virtual machine you find this git repository checked out in "/home/paint/paintrequest", start by open a terminal and go there and bring in the latest code with the following command:
