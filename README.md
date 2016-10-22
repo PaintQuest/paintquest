@@ -20,14 +20,14 @@ The idea of PaintQuest (which by the way is just a working title and may be chan
 _"Art is about expressions, whether it´s a painting, a poem or a piece of code. Express yourself and be an artist."_
 
 ##Environment
-You will find a list of all the frameworks further down on this page. If you want to setup your own environment all those links contain good getting started guides to help you. To make it easy to get started we have made a preinstalled VMware image, just download it and you have everything you need to get started.
+You will find a list of all the frameworks further down this page. If you want to setup your own environment, those links contain good "getting started guides". To make it easy for you to get started we made a preinstalled VMware image, just download it and you´ll have everything you need to get started.
 
 ###Vmware image<br />
 https://github.com/david-nossebro/paintquest/raw/master/docs/env/paintquestenv7z.torrent (3,2gb)<br />
 https://github.com/david-nossebro/paintquest/raw/master/docs/env/paintquestenv.torrent (4,2gb)<br />
 Password: paint <br /><br />
 
-Inside the virtual machine you find this git repository checked out in "/home/paint/paintrequest", start by open a terminal and go there and bring in the latest code with the following command:
+Inside the virtual machine you´ll find this git repository checked out in "/home/paint/paintrequest", start by open a terminal and go there and bring in the latest code with the following command:
 ```
 cd /home/paint/paintquest/ && git pull
 ```
@@ -38,30 +38,30 @@ chromium-browser /home/paint/paintquest/src/mspaint/index.html &
 chromium-browser /home/paint/paintquest/src/mspaint/index.html & 
 deepstream start
 ```
-This should bring you a chromium browsers with two tabs with a canvas in each.
+This will open a chromium browser with two tabs with a canvas in each.
 
-Visual studio code is installed if you want to start laborate. For get started guides and docs you find links to the different frameworks bellow. Most basic stuff is preinstalled.
+Visual studio code is installed if you want to start laborating. For getting started guides and docs you´ll find links to the different frameworks below. Most basic stuff is preinstalled.
 
 ###Slack<br />
 https://paintquest.slack.com
-This is where we hang out in sickness and health. Remember that no idea is to small and no problem to big. Come and be a part of the great team! 
+This is where we hang out in sickness and health. Remember that no idea is too small and no problem too big. Come and be a part of the great team! 
 
 ###Spotify playlists<br />
 https://open.spotify.com/user/snuggles88/playlist/2ud2VzegSwJEHBFYXlh6u7 <br />
-Since this is an open source project and we are sharing everything we can as well share our taste in music as well. Feel free to add your songs! :)
+Since this is an open source project and we´re sharing everything, we can as well share our taste in music too. Feel free to add your songs! :)
 
 ##Frameworks
 Suggestions of frameworks for this project are:
 
 https://www.rethinkdb.com/ <br />
-The open-source database for the realtime web
+The open-source database for the realtime web.
 
 https://deepstream.io/ <br />
 the open realtime server <br />
-a fast, secure and scalable websocket & tcp server for mobile, web & iot
+a fast, secure and scalable websocket & tcp server for mobile, web & iot.
 
 http://vuejs.org/ <br />
-The Progressive JavaScript Framework
+The Progressive JavaScript Framework.
 
 http://www.pixijs.com/ <br />
 Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.
