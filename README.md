@@ -42,11 +42,11 @@ This will open a chromium browser with two tabs with a canvas in each.
 
 Visual studio code is installed if you want to start laborating. For getting started guides and docs you´ll find links to the different frameworks below. Most basic stuff is preinstalled.
 
-###Slack<br />
-https://paintquest.slack.com
+###Slack
+https://paintquest.slack.com <br />
 This is where we hang out in sickness and health. Remember that no idea is too small and no problem too big. Come and be a part of the great team! 
 
-###Spotify playlists<br />
+###Spotify playlists
 https://open.spotify.com/user/snuggles88/playlist/2ud2VzegSwJEHBFYXlh6u7 <br />
 Since this is an open source project and we´re sharing everything, we can as well share our taste in music too. Feel free to add your songs! :)
 
