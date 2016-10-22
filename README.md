@@ -15,7 +15,7 @@ By having fun, sharing our knowledge and laugh toghether we are going to solve c
 _"One small idea may grow big if you share it with friends."_
 
 ##What?
-The idea of PaintQuest (which by the way is just a workname and may be changed) is a browserbased shared canvas which can grow and be infinitely large. This means that all users connected will work on the same canvas in realtime. Think of it like a paint equivalent to Minecraft. Another similar application (but for text) is "Your world of text" which can be found here: https://www.yourworldoftext.com/.
+The idea of PaintQuest (which by the way is just a working title and may be changed) is a browserbased shared canvas which can grow and be infinitely large. This means that all users connected will work on the same canvas in realtime. Think of it like a paint equivalent to Minecraft. Another similar application (but for text) is "Your world of text" which can be found here: https://www.yourworldoftext.com/.
 
 _"Art is about expressions, whether it´s a painting, a poem or a piece of code. Express yourself and be an artist."_
 
