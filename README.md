@@ -42,6 +42,10 @@ This will open a chromium browser with two tabs with a canvas in each.
 
 Visual studio code is installed if you want to start laborating. For getting started guides and docs you´ll find links to the different frameworks below. Most basic stuff is preinstalled.
 
+###Google drive
+https://drive.google.com/drive/folders/0BzMKFQAMC0S2T0cweU1ncEFZODA?usp=sharing
+A shared folder.
+
 ###Slack
 https://paintquest.slack.com <br />
 This is where we hang out in sickness and health. Remember that no idea is too small and no problem too big. Come and be a part of the great team! 
