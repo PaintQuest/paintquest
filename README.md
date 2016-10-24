@@ -43,7 +43,7 @@ This will open a chromium browser with two tabs with a canvas in each.
 Visual studio code is installed if you want to start laborating. For getting started guides and docs you´ll find links to the different frameworks below. Most basic stuff is preinstalled.
 
 ###Google drive
-https://drive.google.com/drive/folders/0BzMKFQAMC0S2T0cweU1ncEFZODA?usp=sharing
+https://drive.google.com/drive/folders/0BzMKFQAMC0S2T0cweU1ncEFZODA?usp=sharing <br />
 A shared folder.
 
 ###Slack
