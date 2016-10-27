@@ -63,5 +63,21 @@ window.onload = function() {
     paint.drawLine(lastCoordinate[0], lastCoordinate[1], lastCoordinate[2], lastCoordinate[3]);
   });
 
+
+  init();
+
+
+  function init() {
+    paintMove.whenReady(() => {
+      let coordinates = paintMove.get('coordinates');
+      
+      if (coordinates) {
+        coordinates.forEach(function(coordinate) {
+          paint.drawLine(coordinate[0], coordinate[1], coordinate[2], coordinate[3]);
+        });
+      }
+    });
+  }
+
   //paint.drawLine(10, 10, 50, 50);
 };
