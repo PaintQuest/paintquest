@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  var client = deepstream('0.0.0.0:6020').login();
+  var client = deepstream('127.0.0.1:6020').login();
   var paintMove = client.record.getRecord('paintMove');
 
   var canvas = document.querySelector('#paint');
