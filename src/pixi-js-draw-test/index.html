@@ -2,77 +2,16 @@
 <!DOCTYPE HTML>
 <html>
    <head>
-      <meta charset="UTF-8">
       <title>Paint</title>
-   </head>
-   <body onload="init();">
-      <div align="center">
-         <canvas id="canvas" width="512" height="384"></canvas>
-      </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.1/pixi.min.js"></script>
-      <script>
-        var graphics = new PIXI.Graphics();
-        var marker = new PIXI.Graphics();
-        var stage = new PIXI.Container();
-        
-        function init() {
-            var width = window.innerWidth
-                || document.documentElement.clientWidth
-                || document.body.clientWidth;
-
-            var height = window.innerHeight
-                || document.documentElement.clientHeight
-                || document.body.clientHeight;
-
-            renderer = PIXI.autoDetectRenderer(
-                width, 
-                height,
-                {view: document.getElementById("canvas")}
-            );
-
-            graphics.beginFill('transparent');
-            graphics.drawRect(0, 0,width, height);
-            graphics.endFill();
-            graphics.interactive = true;
-
-            stage.addChild(graphics);
-            stage.addChild(marker);
-            render();
-
-            marker.lineStyle(2, 0xffd900, 1);
-            graphics.on('mousedown', handleDown);
-        }
-
-        let prevX, prevY;
-
-        function handleDown(event) {
-            prevX = event.data.global.x;
-            prevY = event.data.global.y;
-
-            graphics.on('mousemove', handleMove);
-            graphics.on('mouseup', handleUp);
-        }
-
-        function handleMove(event) {
-            drawLine(prevX, prevY, event.data.global.x, event.data.global.y);
-            prevX = event.data.global.x;
-            prevY = event.data.global.y;
-        }
-
-        function handleUp(event) {
-            graphics.off('mousemove', handleMove);
-            graphics.off('mouseup', handleUp);
-        }
-
-        function drawLine(fromX, fromY, toX, toY) {
-            marker.moveTo(fromX, fromY);
-            marker.lineTo(toX, toY);
-            render();
-        }
-        
-        function render() {
-            renderer.render(stage);
-        }
-      </script>
+      <!--<script src="https://cdn.rawgit.com/deepstreamIO/deepstream.io-client-js/master/dist/deepstream.min.js"></script>
+     -->
+   </head>
+   <body>
+  <div id="sketch">
+      <canvas id="canvas" width="500px" height="500px" style="background:lightblue;"></canvas>
+  </div>
+      <script src="paint.js"></script>
+      <script src="app.js"></script>
    </body>
 </html>
