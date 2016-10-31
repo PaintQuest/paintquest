@@ -1,88 +1,78 @@
 
 <!DOCTYPE HTML>
-<!-- 
-http://www.html5gamedevs.com/topic/16387-how-to-smooth-a-line-drawn-using-mouse-events/
- -->
 <html>
    <head>
       <meta charset="UTF-8">
-      <title>Parallax Scrolling Demo</title>
-      <style>
-         body { background-color: #ffffff; }
-         canvas { background-color: #ffffff; }
-      </style>
+      <title>Paint</title>
    </head>
    <body onload="init();">
       <div align="center">
-         <canvas id="game-canvas" width="512" height="384"></canvas>
+         <canvas id="canvas" width="512" height="384"></canvas>
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.1/pixi.min.js"></script>
       <script>
-		               var graphics = new PIXI.Graphics();
-    var marker = new PIXI.Graphics();
-    var oldPoint, oldMidPoint;
-    var stage = new PIXI.Container();
-         function init() {
+        var graphics = new PIXI.Graphics();
+        var marker = new PIXI.Graphics();
+        var stage = new PIXI.Container();
+        
+        function init() {
+            var width = window.innerWidth
+                || document.documentElement.clientWidth
+                || document.body.clientWidth;
 
-			 var width = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
-
-var height = window.innerHeight
-|| document.documentElement.clientHeight
-|| document.body.clientHeight;
+            var height = window.innerHeight
+                || document.documentElement.clientHeight
+                || document.body.clientHeight;
 
             renderer = PIXI.autoDetectRenderer(
-				width, 
-				height,
-               {view: document.getElementById("game-canvas")}
+                width, 
+                height,
+                {view: document.getElementById("canvas")}
             );
-        graphics.beginFill('transparent');
-        graphics.drawRect(0, 0,width, height);
-        graphics.endFill();
-        graphics.interactive = true;
-        graphics.on('mousedown', handleDown);
-        stage.addChild(graphics);
-        stage.addChild(marker);
-        render();
-         }
 
-    function animate() {
-        renderer.render(stage);
-    }
+            graphics.beginFill('transparent');
+            graphics.drawRect(0, 0,width, height);
+            graphics.endFill();
+            graphics.interactive = true;
 
-    function handleDown(event) {
-        var point = new PIXI.Point(event.data.global.x, event.data.global.y);
-        marker.lineStyle(2, 0xffd900, 1);
-        marker.moveTo(point.x, point.y);
-        marker.lineTo(point.x, point.y);
-        oldPoint = oldMidPoint = point;
-        graphics.on('mousemove', handleMove);
-        graphics.on('mouseup', handleUp);
-        render();
-    }
+            stage.addChild(graphics);
+            stage.addChild(marker);
+            render();
 
-    function handleMove(event) {
-        var point = new PIXI.Point(event.data.global.x, event.data.global.y);
-        var midPoint = new PIXI.Point(oldPoint.x + point.x >> 1, oldPoint.y + point.y >> 1);
-        marker.moveTo(midPoint.x, midPoint.y);
-        marker.quadraticCurveTo(oldPoint.x, oldPoint.y, oldMidPoint.x, oldMidPoint.y);
-        oldMidPoint = midPoint;
-        oldPoint = point;
-        render();
-    }
+            marker.lineStyle(2, 0xffd900, 1);
+            graphics.on('mousedown', handleDown);
+        }
 
-    function handleUp(event) {
-        var point = new PIXI.Point(event.data.global.x, event.data.global.y);
-        marker.endFill();
-        graphics.off('mousemove', handleMove);
-        graphics.off('mouseup', handleUp);
-        render();
-    }
+        let prevX, prevY;
 
-    function render() {
-        renderer.render(stage);
-    }
+        function handleDown(event) {
+            prevX = event.data.global.x;
+            prevY = event.data.global.y;
+
+            graphics.on('mousemove', handleMove);
+            graphics.on('mouseup', handleUp);
+        }
+
+        function handleMove(event) {
+            drawLine(prevX, prevY, event.data.global.x, event.data.global.y);
+            prevX = event.data.global.x;
+            prevY = event.data.global.y;
+        }
+
+        function handleUp(event) {
+            graphics.off('mousemove', handleMove);
+            graphics.off('mouseup', handleUp);
+        }
+
+        function drawLine(fromX, fromY, toX, toY) {
+            marker.moveTo(fromX, fromY);
+            marker.lineTo(toX, toY);
+            render();
+        }
+        
+        function render() {
+            renderer.render(stage);
+        }
       </script>
    </body>
 </html>
