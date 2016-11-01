@@ -11,7 +11,7 @@ server.set("storage", new DSRethinkConnector({
     port: 28015,
     host: "localhost",
     splitChar: "/",
-    defaultTable: "dsdemo"
+    defaultTable: "paintmoves"
 }));
 
 // Run the server
